@@ -121,19 +121,18 @@ export const AboutSection = () => {
             {/* My reads Card */}
             <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader
-                title="My Reads"
-                description="Explore the books shaping my perspectives"
+                title="Inspiration"
+                description="Le livre qui marque ma perspective"
               />
               <div className="w-40 mx-auto mt-2 md:mt-0">
-                <Image src={bookImage} alt="Book cover" />
+                <Image src={bookImage} alt="Book cover 'Atomic changes'" />
               </div>
             </Card>
             {/* Techs Card */}
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="Mes outils"
-                description="Explore the technologies and tools I use to craft exceptional
-                digital experiences."
+                description="Découvrez les technologies et outils derrière mes créations numériques"
                 className=""
               />
               <ToolboxItems items={toolboxItems} className="" />
@@ -148,8 +147,8 @@ export const AboutSection = () => {
             {/* Beyond the code Card */}
             <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
-                title="Beyond the code"
-                description="Explore my interests and hobbies beyond the digital realm"
+                title="Au-delà du code"
+                description="Découvrez mes centres d'intérêt et passions au-delà du domaine numérique."
                 className="px-6 pt-6"
               />
               <div className="relative flex-1">
