@@ -11,8 +11,9 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "Mon Portfolio",
-  description: "Created with the help of Frontend Tribe",
+  title: "Portfolio | Fayz Mohamed - Développeur Frontend & Expert Next.js",
+  description:
+    "Découvrez le portfolio de Fayz Mohamed, développeur frontend expert en Next.js. Projets modernes, designs intuitifs et performances optimales au service de vos idées.",
 };
 
 export default function RootLayout({
