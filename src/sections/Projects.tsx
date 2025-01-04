@@ -1,50 +1,44 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import jicalmboxLandingPage from "@/assets/images/Jicalmbox-landing-page.png";
+import argentBankLandingPage from "@/assets/images/argentBank-landing-page.png";
+import kasaLandingPage from "@/assets/images/kasa-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import grainImage from "@/assets/images/grain.jpg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
 // Portfolio projects data
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Jicalmbox",
+    year: "2024",
+    title: "Jicalmbox Vente de box par abonnement",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Wordpress" },
+      { title: "CSS" },
+      { title: "Javascript" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://jicalmbox.com",
+    image: jicalmboxLandingPage,
+    buttonTxt: "Voir le site",
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    company: "ArgentBank",
+    year: "2024",
+    title: "ArgentBank Application Bancaire",
+    results: [{ title: "React" }, { title: "Redux" }, { title: "Javascript" }],
+    link: "https://github.com/fayzMo94/opc_iw_projet10_argentBank",
+    image: argentBankLandingPage,
+    buttonTxt: "Lien github",
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    company: "Kasa",
+    year: "2024",
+    title: "Kasa Site de Location Immobilière",
+    results: [{ title: "REACT" }, { title: "SaSS" }, { title: "Javascript" }],
+    link: "https://github.com/fayzMo94/opc_iw_projet7_kasa-location",
+    image: kasaLandingPage,
+    buttonTxt: "Lien github",
   },
 ];
 
@@ -90,7 +84,7 @@ export const ProjectsSection = () => {
                   </ul>
                   <a href={project.link}>
                     <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex justify-center items-center gap-2 mt-8 ">
-                      <span>Visit live site</span>
+                      <span>{project.buttonTxt}</span>
                       <ArrowUpRightIcon className="size-4 " />
                     </button>
                   </a>
@@ -99,7 +93,7 @@ export const ProjectsSection = () => {
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-xl"
                   />
                 </div>
               </div>
