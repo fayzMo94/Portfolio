@@ -3,7 +3,7 @@ import grainImage from "@/assets/images/grain.jpg";
 
 export const ContactSection = () => {
   return (
-    <div className="py-16 pt-12 lg:py-24 lg:pt-20">
+    <section id="contactSection" className="py-16 pt-12 lg:py-24 lg:pt-20">
       <div className="container">
         <div className="bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-900 py-8 px-10 rounded-3xl text-center md:text-left relative overflow-hidden">
           <div
@@ -24,7 +24,7 @@ export const ContactSection = () => {
             <div>
               <a
                 href="mailto:fayzmohamedpro94@gmail.com"
-                className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 cursor-pointer z-90"
+                className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 cursor-pointer z-90 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
               >
                 <span className="font-semibold">Contactez-moi</span>
                 <ArrowUpRightIcon className="size-4" />
@@ -33,6 +33,6 @@ export const ContactSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

@@ -14,6 +14,7 @@ import NextJSIcon from "@/assets/icons/personal tech icons/nextjs_fill_icon.svg"
 import MongoDBIcon from "@/assets/icons/personal tech icons/mongodb_icon.svg";
 import FirebaseIcon from "@/assets/icons/personal tech icons/firebase_icon.svg";
 import mapImage from "@/assets/images/map.png";
+import mapImg from "@/assets/images/Carte-du-Val-de-Marne.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
@@ -112,7 +113,7 @@ export const AboutSection = () => {
   const constraintRef = useRef(null);
 
   return (
-    <div className="py-20 lg:py-28">
+    <section id="aboutSection" className="py-20 lg:py-28">
       <div className="container">
         <SectionHeader
           title="Un aperçu  de mon monde"
@@ -163,7 +164,7 @@ export const AboutSection = () => {
                 {hobbies.map((hobby) => (
                   <motion.div
                     key={hobby.title}
-                    className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
+                    className="inline-flex cursor-pointer items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
                     style={{ left: hobby.left, top: hobby.top }}
                     drag
                     dragConstraints={constraintRef}
@@ -180,7 +181,7 @@ export const AboutSection = () => {
             <Card className="h-[320px] p-0 md:col-span-2 lg:col-span-1">
               <Image
                 className="h-full w-full object-cover object-left-top"
-                src={mapImage}
+                src={mapImg}
                 alt="Map"
               />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
@@ -196,6 +197,6 @@ export const AboutSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

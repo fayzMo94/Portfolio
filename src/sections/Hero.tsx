@@ -8,9 +8,12 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <div
+      id="home"
+      className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
+    >
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 -z-30"
         style={{
           maskImage:
             "linear-gradient(to bottom, transparent, black 10%, black 70%, transparent)",
@@ -21,7 +24,7 @@ export const HeroSection = () => {
           className="hero-layers -z-30 opacity-5"
           style={{ backgroundImage: `url(${grainImage.src})` }}
         ></div>
-        {/* hero ring */}
+        {/* hero rings */}
         <div className="size-[620px] hero-ring"></div>
         <div className="size-[820px] hero-ring"></div>
         <div className="size-[1020px] hero-ring"></div>
@@ -135,15 +138,21 @@ export const HeroSection = () => {
             à partir de vos designs. Parlons de votre prochain projet !
           </p>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 z-50">
+          <a
+            href="#projectsSection"
+            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+          >
             <span className="font-semibold">Mes projets</span>
             <ArrowDwn className="size-4" />
-          </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+          </a>
+          <a
+            href="#contactSection"
+            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+          >
             <span className="">👋</span>
             <span className="font-semibold">Contactez-moi</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>

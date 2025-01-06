@@ -4,8 +4,8 @@ const footerLinks = [
   { title: "Github", href: "https://github.com/fayzMo94" },
   // { title: "Instagram", href: "#" },
   { title: "LinkedIn", href: "#" },
-  { title: "Mentions légales", href: "#" },
-  { title: "Confidentialité", href: "#" },
+  // { title: "Mentions légales", href: "#" },
+  // { title: "Confidentialité", href: "#" },
 ];
 
 export const Footer = () => {
@@ -22,7 +22,7 @@ export const Footer = () => {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5"
+                className="inline-flex items-center gap-1.5 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
               >
                 <span className="font-semibold">{link.title}</span>
                 <ArrowUpRightIcon className="size-4" />
