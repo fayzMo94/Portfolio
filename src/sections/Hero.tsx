@@ -131,11 +131,12 @@ export const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl text-center md:text-5xl mt-8 tracking-wide">
-            Mon expérience à votre service
+            Mon exp&eacute;rience &agrave; votre service
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            Je suis spécialisé dans la création d'applications web performantes
-            à partir de vos designs. Parlons de votre prochain projet !
+            Je suis sp&eacute;cialis&eacute; dans la cr&eacute;ation
+            d&apos;applications web performantes &agrave; partir de vos designs.
+            Parlons de votre prochain projet !
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 z-50">
