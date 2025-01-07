@@ -1,5 +1,5 @@
 import jicalmboxLandingPage from "@/assets/images/Jicalmbox-landing-page.png";
-import argentBankLandingPage from "@/assets/images/argentBank-landing-page.png";
+import argentBankLandingPage from "@/assets/images/ArgentBank-landing-page.png";
 import kasaLandingPage from "@/assets/images/kasa-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
