@@ -42,6 +42,8 @@ const portfolioProjects = [
   },
 ];
 
+// 
+
 export const ProjectsSection = () => {
   return (
     <section id="projectsSection" className="pb-16 lg:py-24">
