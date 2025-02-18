@@ -1,6 +1,11 @@
 import jicalmboxLandingPage from "@/assets/images/Jicalmbox-landing-page.png";
 import argentBankLandingPage from "@/assets/images/ArgentBank-landing-page.png";
 import kasaLandingPage from "@/assets/images/kasa-landing-page.png";
+import bookiLandingPage from "@/assets/images/Booki-landing-page.png";
+import ohMyFoodLandingPage from "@/assets/images/oh-my-food-landing-page.png";
+import sophieBluelLandingPage from "@/assets/images/Portfolio-sophie-bluel-landing-page.png";
+import eventsLandingPage from "@/assets/images/724events-landing-page.png";
+import portfolioLandingPage from "@/assets/images/Portfolio-landing-page3.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -40,9 +45,58 @@ const portfolioProjects = [
     image: kasaLandingPage,
     buttonTxt: "Lien github",
   },
+  {
+    company: "724 events",
+    year: "2024",
+    title: "724 events Site d'orginasateur d'événements",
+    results: [{ title: "REACT" }, { title: "Javascript" }],
+    link: "https://github.com/fayzMo94/opc_iw_projet9_724events",
+    image: eventsLandingPage,
+    buttonTxt: "Lien github",
+  },
+  {
+    company: "OhMyFood",
+    year: "2024",
+    title: "OhMyFood Application de commande de repas",
+    results: [{ title: "HTML" }, { title: "Sass" }],
+    link: "https://github.com/fayzMo94/opc_iw_projet4_ohmyfood",
+    image: ohMyFoodLandingPage,
+    buttonTxt: "Lien github",
+  },
+  {
+    company: "Booki",
+    year: "2024",
+    title: "Booki Site d'hebergement de vacances",
+    results: [{ title: "HTML" }, { title: "CSS" }],
+    link: "https://github.com/fayzMo94/",
+    image: bookiLandingPage,
+    buttonTxt: "Lien github",
+  },
+  {
+    company: "Sophie Bluel",
+    year: "2024",
+    title: "Sophie Bluel Portfolio Architecte d'intérieur",
+    results: [{ title: "HTML" }, { title: "Javascript" }],
+    link: "https://github.com/fayzMo94/opc_iw_projet6_portfolioSophieBluel",
+    image: sophieBluelLandingPage,
+    buttonTxt: "Lien github",
+  },
+  {
+    company: "Fayz Mohamed",
+    year: "2025",
+    title: "Portfolio Fayz Mohamed Développeur Web",
+    results: [
+      { title: "NextJS" },
+      { title: "Typecript" },
+      { title: "TailwindCSS" },
+    ],
+    link: "https://fayzmohamed.com/",
+    image: portfolioLandingPage,
+    buttonTxt: "Lien portfolio",
+  },
 ];
 
-// 
+//
 
 export const ProjectsSection = () => {
   return (

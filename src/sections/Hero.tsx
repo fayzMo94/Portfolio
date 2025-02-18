@@ -1,4 +1,5 @@
 import memojiImage from "@/assets/images/memoji-computer.png";
+import memojiBImage from "@/assets/images/memoji-laptop-blck.png";
 import Image from "next/image";
 import ArrowDwn from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
@@ -115,7 +116,7 @@ export const HeroSection = () => {
       <div className="container">
         <div className="flex flex-col items-center">
           <Image
-            src={memojiImage}
+            src={memojiBImage}
             className="size-[100px]"
             alt="Emoji derrière un mac"
           />

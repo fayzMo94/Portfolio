@@ -13,9 +13,9 @@ import TailwindIcon from "@/assets/icons/personal tech icons/tailwind_css_icon.s
 import NextJSIcon from "@/assets/icons/personal tech icons/nextjs_fill_icon.svg";
 import MongoDBIcon from "@/assets/icons/personal tech icons/mongodb_icon.svg";
 import FirebaseIcon from "@/assets/icons/personal tech icons/firebase_icon.svg";
-import mapImage from "@/assets/images/map.png";
 import mapImg from "@/assets/images/Carte-du-Val-de-Marne.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
+import memojiBlck from "@/assets/images/memoji-smile3.png";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import { motion } from "framer-motion";
@@ -188,7 +188,7 @@ export const AboutSection = () => {
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2s]"></div>
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10"></div>
                 <Image
-                  src={smileMemoji}
+                  src={memojiBlck}
                   alt="smiling memoji"
                   className="size-20"
                 />
